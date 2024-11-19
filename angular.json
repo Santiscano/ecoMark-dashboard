@@ -30,7 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/@sami/styles/tailwind.scss",
+              "src/@sami/styles/themes.scss",
+              "src/styles/vendors.scss",
+              "src/@sami/styles/main.scss",
+              "src/styles/styles.scss",
+              "src/styles/tailwind.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -44,13 +49,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "3mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "75kb",
+                  "maximumError": "90kb"
                 }
               ],
               "outputHashing": "all"
