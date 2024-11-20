@@ -5,7 +5,7 @@ const path = require("path");
 const colors = require("tailwindcss/colors");
 const plugin = require("tailwindcss/plugin");
 const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette").default;
-const generateContrast = require(path.resolve(__dirname, "../utils/generate-contrasts"));
+const generateContrasts = require(path.resolve(__dirname, "../utils/generate-contrasts"));
 const jsonToSassMap = require(path.resolve(__dirname,"../utils/json-to-sass-map"));
 
 // -----------------------------------------------------------------------------------------------------
@@ -308,9 +308,9 @@ const theming = plugin.withOptions(
                 "text-secondary": colors.slate[400],
                 "text-hint": colors.slate[500],
                 "text-disabled": colors.slate[600],
-                border: chroma(colors.slate[100]).alpha(0.12).css(),
-                divider: chroma(colors.slate[100]).alpha(0.12).css(),
-                icon: colors.slate[400],
+                "border": chroma(colors.slate[100]).alpha(0.12).css(),
+                "divider": chroma(colors.slate[100]).alpha(0.12).css(),
+                "icon": colors.slate[400],
                 "mat-icon": colors.slate[400],
               },
             },

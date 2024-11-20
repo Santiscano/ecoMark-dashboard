@@ -23,6 +23,7 @@
       "dom"
     ],
     "paths": {
+      // "@sami/*": ["./src/app/@sami/*"],
       "@app/*": ["./src/app/*"],
       "@core/*": ["./src/app/core/*"],
       "@layout/*": ["./src/app/layout/*"],
