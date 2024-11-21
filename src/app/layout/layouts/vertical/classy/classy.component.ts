@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
-import { LoadingBarComponent } from '../../../../../@sami/components/loading-bar/loading-bar.component';
+import { LoadingBarComponent } from '@sami/components/loading-bar/loading-bar.component';
 
 @Component({
   selector: 'classy-layout',

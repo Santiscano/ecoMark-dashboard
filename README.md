@@ -46,10 +46,10 @@ $ npm i quill perfect-scrollbar lodash-es
         "build":{
           "options":{
             "styles":[
-              "src/@sami/styles/tailwind.scss",
-              "src/@sami/styles/themes.scss",
+              "src/app/sami/styles/tailwind.scss",
+              "src/app/sami/styles/themes.scss",
               "src/styles/vendors.scss",
-              "src/@sami/styles/main.scss",
+              "src/app/sami/styles/main.scss",
               "src/styles/styles.scss",
               "src/styles/tailwind.scss"
             ]
