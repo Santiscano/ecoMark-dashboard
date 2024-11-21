@@ -1,9 +1,12 @@
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
+import { LoadingBarComponent } from '../../../../../@sami/components/loading-bar/loading-bar.component';
 
 @Component({
   selector: 'classy-layout',
   standalone: true,
-  imports: [],
+  imports: [
+    LoadingBarComponent
+  ],
   templateUrl: './classy.component.html',
   styleUrl: './classy.component.scss',
   encapsulation: ViewEncapsulation.None
@@ -22,10 +25,10 @@ export class ClassyComponent implements OnInit, OnDestroy {
   // -----------------------------------------------------------------------------------------------------
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    console.log('ClassyComponent initialized');
   }
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
+    console.log('ClassyComponent destroyed');
   }
 
   // -----------------------------------------------------------------------------------------------------
