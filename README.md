@@ -1,6 +1,6 @@
-# EcoMarkDashboard
+# Fuse - Admin template and Starter project for Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
 
 ## Development server
 
@@ -25,53 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-
-
-### Librerias instaladas no preinstaladas por angular
-```shell
-$ npm i tailwindcss postcss lodash chroma-js autoprefixer @types/lodash-es @types/lodash @types/chroma-js @tailwindcss/typography @tailwindcss/line-clamp -D
-```
-
-```shell
-$ npm i quill perfect-scrollbar lodash-es
-```
-
-#### Configurcion de angular.json
-```json
-{
-  "projects": {
-    "ecoMark-dashboard":{
-      "architect": {
-        "build":{
-          "options":{
-            "styles":[
-              "src/app/sami/styles/tailwind.scss",
-              "src/app/sami/styles/themes.scss",
-              "src/styles/vendors.scss",
-              "src/app/sami/styles/main.scss",
-              "src/styles/styles.scss",
-              "src/styles/tailwind.scss"
-            ]
-          }
-        }
-      }
-    }
-  }
-}
-```
-
-#### Configurcion de angular.json
-```json
-{
-  "compilerOptions":{
-    "paths": {
-      "@app/*": ["./src/app/*"],
-      "@core/*": ["./src/app/core/*"],
-      "@layout/*": ["./src/app/layout/*"],
-      "@shared/*": ["./src/app/shared/*"],
-      "@theme/*": ["./src/app/theme/*"]
-    }
-  }
-}
-```
